@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./crud.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h2>Lista de Veículos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Cor</th>
+                <th>Placa</th>
+                <th>Preço</th>
+                <th>Fabricacao</th>
+                <th>Data da Compra</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="recordList"></tbody>
+    </table>
+
+    <h2>Adicionar Veiculo</h2>
+    <form id="veiculoForm">
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" required><br>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required><br>
+
+        <label for="ano">Ano:</label>
+        <input type="number" id="ano" name="ano" required><br>
+
+        <label for="cor">Cor:</label>
+        <input type="text" id="cor" name="cor"><br>
+
+        <label for="placa">Placa:</label>
+        <input type="text" id="placa" name="placa" required><br>
+
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" name="preco" step="0.01" required><br>
+
+        <label for="data_fabricacao">Data de Fabricação:</label>
+        <input type="date" id="data_fabricacao" name="data_fabricacao" required><br>
+
+        <label for="data_compra">Data de Compra:</label>
+        <input type="date" id="data_compra" name="data_compra" required><br>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao"></textarea><br>
+
+        <input type="submit" value="Cadastrar Veículo">
+    </form>
+</body>
+</html>
